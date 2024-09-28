@@ -1,0 +1,192 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0f29; /* Dark Blue Background */
+  color: #e0e6f7; /* Light Blue Text */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1f36; /* Darker Blue for Nav */
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #ffffff; /* White Text */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0a74da; /* Lighter Blue on Hover */
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5em;
+  color: #ffffff; /* White Logo */
+}
+
+.logo h1 {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00bfff; /* Lighter Blue for Initials */
+}
+
+/* Responsive Navigation for Small Screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+/* Home Page Styles */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+a {
+  color: #00bfff; /* Lighter Blue Links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Form Styles */
+form {
+  background-color: #1a1f36; /* Darker Blue for Forms */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #0a0f29; /* Dark Blue Input Fields */
+  color: #ffffff;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #e0e6f7; /* Light Blue Placeholder */
+}
+
+form button {
+  background-color: #00bfff; /* Lighter Blue Button */
+  color: #0a0f29; /* Dark Blue Text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0a74da; /* Slightly Darker Blue on Hover */
+}
+
+/* Footer and Contact Panel */
+.contact-panel {
+  background-color: #1a1f36; /* Darker Blue for Panels */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.contact-panel p {
+  font-size: 1.1em;
+  color: #e0e6f7; /* Light Blue Text */
+}
+
+/* Contact Page Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive Form */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  form button {
+    font-size: 0.9em;
+  }
+}
+
+/* Project and Service Page Styles */
+.project, .service {
+  background-color: #1a1f36; /* Darker Blue Panels */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project img, .service img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project p, .service p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #e0e6f7;
+}
+
+/* Responsive Project/Service Cards */
+@media (max-width: 768px) {
+  .project, .service {
+    margin: 10px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #0a0f29;
+  color: #e0e6f7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
